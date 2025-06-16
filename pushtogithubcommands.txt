@@ -1,0 +1,24 @@
+# Step-by-step Git commands to push from Fedora to GitHub
+
+# 1. Set default branch name to main (one-time setup)
+git config --global init.defaultBranch main
+
+# 2. Set your Git username and email (one-time setup)
+git config --global user.name "jesseeastern"
+git config --global user.email "jesse.palmer@easternstudent.ca"
+
+# 3. Clone your GitHub repository
+git clone https://github.com/jesseeastern/fedora-proof.git
+cd fedora-proof
+
+# 4. Create or copy a file to push
+echo "Example content" > example.txt
+
+# 5. Stage the file for commit
+git add example.txt
+
+# 6. Commit the changes with a message
+git commit -m "Added example.txt from Fedora"
+
+# 7. Push the file to GitHub
+git push origin main
